@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>Current theme source: <strong id="theme-source">System</strong></p>
+
+    <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    <button id="reset-to-system">Reset to System Theme</button>
+    <button id="open-files">
+      <i class="fa fa-pause-circle" aria-hidden="true"></i>
+      Pause/Play
+    </button>
+    <button id="open-files2">Open Music File</button>
+
+    <input type="range" min="0" max="100" value="5" id="MusVolume">
+
+    <button id="Loop">
+      <i class="fa-solid fa-repeat"></i>
+      Loop Song
+    </button>
+
+    <input type="range" min="0" max="1000" value="0" id="MusTime">
+
+    <script src="renderer.js"></script>
+
+    <div id="content-mobile">
+      <i class="fas fa-exclamation-triangle fa-8x"></i>
+      <h3>To view this webpage, please use a non-mobile device.<h3>
+    </div>
+
+    <div id="content-mobile">
+      <!-- <i class="fa fa-refresh" aria-hidden="false"></i> -->
+      <i class="fa-solid fa-repeat"></i>
+      <h3>Pause.<h3>
+    </div>
+
+  </body>
+</body>
+</html>
