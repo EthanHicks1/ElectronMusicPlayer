@@ -125,18 +125,3 @@ document.getElementById('toggle-dark-mode').addEventListener('click', async () =
       clearInterval(mus_id);
     };
   })
-
-  function move() {
-    var progress = document.getElementById("progressbar");
-    var width = 1;
-    var id = setInterval(frame, 100);
-  
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-      } else {
-        width++;
-        progress.value = width
-      }
-    }
-  }
